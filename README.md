@@ -12,9 +12,9 @@
 </p>
 <p>
 <h5>Скриншот 1</h5>
-<img src="1.png" width="50%"/>
+<img src="1.png" width="75%"/>
 </p>
 <p>
 <h5>Скриншот 2</h5>
-<img src="2.png" width="50%" />
+<img src="2.png" width="75%" />
 </p>
