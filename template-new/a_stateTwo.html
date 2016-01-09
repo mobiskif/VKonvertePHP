@@ -1,0 +1,29 @@
+<article class="container">
+<form action="./" method="post" enctype="multipart/form-data">
+<table class="table-2">
+    <colgroup>
+        <col span="1">
+        <col span="1">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Отправитель</th>
+            <th>Получатель</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Отправитель"><em readonly name="from" id="from" rows="4"><?php echo $this->zakaz->from;?></em></td>
+            <td data-th="Получатель"><em readonly name="to" id="to" rows="4"><?php echo $this->zakaz->to;?></em></td>
+        </tr>
+        <tr>
+            <td data-th="Файл"><?php if ($this->zakaz->file==null) echo '<input class="button--primar" type="file" name="userfile" id="f"/>'; 
+					else echo '<label>'.$this->zakaz->file.'</label>'	?></td>
+            <td data-th="Внимание!"><strong><?php echo $this->error;?></strong></td>
+        </tr>
+    </tbody>
+</table>
+<a href="./?nav=prev" class="button--secondary">Исправить адрес</a> 
+<input type="submit" name="submit" class="button--primary my" value="Оплатить"/>
+</form> 
+</article>

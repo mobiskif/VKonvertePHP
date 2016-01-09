@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";html{border:0px solid white;}
+body{text-align:center;font-size:100%;font-family:serif;margin:0;}
+#selfie{background-image:url('../img/selfie.jpg');background-size:contain;background-repeat:no-repeat;background-position:center;height:300px;}
+ul{list-style:none;}
+h2{font-weight:normal;font-size:inherit;}
+footer{font-size:small;}
+li{display:inline-block;padding:.6em;border:2px solid rgb(228, 83, 53);border-radius:.5em;}
+ul{padding-left:0;}
+footer li{border:0}
+table{border:1em dashed rgb(228, 83, 53);margin:auto;padding:1em;border-radius:.8em;min-width:50%; max-width:90%;}
+.active{font-weight:bold;}
+.Classic{background-color:white;background-size:100%;}
+.Modern{background-image:url('../img/modern.jpg');background-size:100%;}
+.Photo{background-image:url('../img/photo.jpg');background-size:100%;}
+.Post{border-color:rgb(228, 83, 53);}
+.Sheep{border-color:blue;}
+.Avia{border-color:orange;}
+td {border: 0px solid; text-align:left; padding: .5em}
+ul {border: 0px solid; margin:0; margin-top:2em;}
+footer h3 {margin-top:2em;}
+.zero header {border:0px solid; background-color:rgb(228, 83, 53); color:white; padding:1em;}
+.zero nav li {ackground-color: rgb(228, 83, 53); color: white;}
+/*
+.zero nav li a {color:white; text-decoration: none;}
+.zero nav li a:hover { text-decoration:underline; }
+*/
+#content nav li input {background-color: inherit; border:0; text-decoration: underline; color:navy;}

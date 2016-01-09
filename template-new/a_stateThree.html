@@ -1,0 +1,71 @@
+<article class="container">
+<form action="./" method="post" enctype="multipart/form-data">
+<table class="table-2">
+    <colgroup>
+        <col span="1">
+        <col span="1">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Отправитель</th>
+            <th>Получатель</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Отправитель"><em readonly name="from" id="from" rows="4"><?php echo $this->zakaz->from;?></em></td>
+            <td data-th="Получатель"><em readonly name="to" id="to" rows="4"><?php echo $this->zakaz->to;?></em></td>
+        </tr>
+        <tr>
+            <td data-th="Файл"><?php echo '<label>'.$this->zakaz->file.'</label>'; ?>&nbsp;</td>
+            <td data-th="Оплатить"><?php echo Model::getPayForm($this->zakaz); ?></td>
+        </tr>
+    </tbody>
+</table>
+<a href="./?nav=home" class="button--secondary">В начало</a> 
+</form> 
+</article>
+
+<!-- 
+<article id="content">
+	<header>
+		<h1>
+			<?php echo $this->getName()?>
+		</h1>
+	</header>
+	<table
+		class="<?php echo $this->zakaz->papeer.' '.$this->zakaz->konvert ?>">
+		<tr>
+			<td style="text-align: left;">Отправитель:<br /> <em> <?php echo $this->zakaz->from;?>
+			</em>
+			</td>
+			<td><img alt="*" src="img/mark.gif" height="116px"></td>
+		</tr>
+		<tr>
+			<td><label for="f">Вложение:</label><br /> <?php if ($this->zakaz->file!=null) echo $this->zakaz->file."<br/><br/>"; ?>
+				<?php //if (isset($this->context->file)) echo $this->context->file; ?>
+				<?php echo Model::getPayForm($this->zakaz); ?></td>
+			<td style="text-align: left;">Получатель:<br /> <em> <?php echo $this->zakaz->to;?>
+			</em>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center"><footer>
+					<nav>
+						<ul>
+							<li><a href="?action=get_Zakaz">Проверить заказ</a></li>
+						</ul>
+					</nav>
+				</footer></td>
+		</tr>
+	</table>
+	<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+		<?php //echo Model::getStatesNav($this);?>
+		<?php //echo Model::getActionsNav();?>
+		<?php //echo Model::getStatesNav($this);?>
+		<ul>
+			<li><a href="?nav=prev">Назад</a></li>
+		</ul>
+	</nav>
+</article>
+-->

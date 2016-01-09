@@ -1,0 +1,25 @@
+<article class="container">
+<form>
+<table class="table-2">
+    <colgroup>
+        <col span="1">
+        <col span="1">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Отправитель</th>
+            <th>Получатель</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Отправитель"><textarea name="from" id="from" rows="4"><?php echo $this->zakaz->from;?></textarea></td>
+            <td data-th="Получатель"><textarea name="to" id="to" rows="4"><?php echo $this->zakaz->to;?></textarea></td>
+        </tr>
+    </tbody>
+</table>
+<a href="./?nav=home" class="button--secondary">В начало</a> 
+<!-- <a href="./?submit=stateTwo" class="button--primary">Вложить файл</a> --> 
+<input type="submit" name="submit" class="button--primary my" value="Вложить файл"/>
+</form> 
+</article>

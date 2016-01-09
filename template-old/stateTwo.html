@@ -1,0 +1,48 @@
+<article id="content">
+	<form action="./" method="post" enctype="multipart/form-data">
+		<header>
+			<h1>
+				<?php echo $this->getName()?>
+			</h1>
+		</header>
+		<table
+			class="<?php echo $this->zakaz->papeer.' '.$this->zakaz->konvert ?>">
+			<tr>
+				<td style="text-align: left;">Отправитель:<br /> <em>
+						<?php echo $this->zakaz->from;?>
+				</em>
+				</td>
+				<td width="50%" center>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>
+					<?php 
+					if ($this->zakaz->file==null) echo '<input type="file" name="userfile" id="f"/>'; 
+					else echo '<input type="text" name="userfile" id="f" readonly value="'.$this->zakaz->file.'"/>'
+					?> <!--  <input type="submit" name="submit_file" value="Отправить" /> -->
+				</td>
+				<td style="text-align: left;">Получатель:<br /> <em>
+						<?php echo $this->zakaz->to;?>
+				</em>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align: center"><footer>
+						<nav>
+							<ul>
+								<li><a href="?action=get_Konvert">Выбрать конверт</a></li>
+								<li><a href="?action=get_Papeer">Выбрать бумагу</a></li>
+							</ul>
+						</nav>
+					</footer></td>
+			</tr>
+		</table>
+		<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+			<?php //echo Model::getStatesNav($this);?>
+			<ul>
+				<li><a href="?nav=prev">Назад</a></li>
+				<li><input type="submit" name="submit" value="Дальше" /></li>
+			</ul>
+		</nav>
+	</form>
+</article>

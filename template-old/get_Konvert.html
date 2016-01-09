@@ -1,0 +1,22 @@
+<article>
+	<h3>
+		<?php echo $this->getName() ?>
+	</h3>
+	<section>
+		<figure>
+			<a <?php if ($this->zakaz->konvert == "Post") echo 'class="active"';?> href="?action=set_Konvert&konvert=Post" ><img src="img/post.jpg" height="86px" alt="ВКонверте" />
+			<figcaption>"Почтовый"</figcaption></a>
+		</figure>
+		<figure>
+			<a <?php if ($this->zakaz->konvert == "Sheep") echo 'class="active"';?> href="?action=set_Konvert&konvert=Sheep" ><img src="img/sheep.jpg" height="86px" alt="ВКонверте" />
+			<figcaption>"Морской"</figcaption></a>
+		</figure>
+		<figure>
+			<a <?php if ($this->zakaz->konvert == "Avia") echo 'class="active"';?> href="?action=set_Konvert&konvert=Avia" ><img src="img/avia.jpg" height="86px" alt="ВКонверте" />
+			<figcaption>"Авиа"</figcaption></a>
+		</figure>
+	</section>
+	<nav>
+		<a href="./">Назад</a>
+	</nav>
+</article>
