@@ -1,0 +1,72 @@
+div {border: 0px solid silver; margin: 1px}/**/
+td {border: 0px solid green; margin: 2px}/**/
+ody {font-family: Tahoma, sans-serif; font-size: 89%;}
+img {border:0;}
+table#convert {
+    border: 1px dotted silver;
+    padding: 1em;
+	background: white url(img/konvert3.jpg) no-repeat left top;
+    background-size: contain;
+    height: 330px;
+    width: 100%;
+}
+
+input#f {border: 0px solid red;
+       background-color: white;     
+}
+
+.topmenu { text-align: right;}
+
+.wrap {
+	width: 68%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	overflow: auto;
+}
+.middle {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	overflow: hidden;
+}
+
+.left {
+	float:left;
+	width: 23%;
+	padding-right: 0.5em;
+}
+.right {
+	width: 74%;
+	overflow: hidden;
+}
+.topmenu li, .middle h1 {display:inline;}
+ul.topmenu, ul.menu {margin:0; padding:0}
+
+.bordertop {
+	border-top: 0px dotted silver;
+	border-bottom: 1px dotted silver;
+	padding-top: .5em;
+	padding-bottom: .8em;
+}
+.borderbottom {
+	border-top: 1px dotted silver;
+	border-bottom: 0px dotted silver;
+	padding-top: .5em;
+	padding-bottom: .8em;
+}
+h1 a {text-decoration: none; font-weight:normal}
+h1 a:hover{text-decoration:underline}
+
+/*
+form {margin:0;}
+#login { font-size:small; width:6em;}
+#pass { font-size:small; width:3.9em;}
+form * {color:silver; font-size:small;}
+.border ul {float:right;}
+.border {overflow: hidden;}
+.border form {display:inline}
+form input{border: 1px dotted silver; background-color:white}
+#search {border: 1px solid silver}
+*/

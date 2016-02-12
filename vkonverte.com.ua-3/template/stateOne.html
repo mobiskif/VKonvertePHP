@@ -1,0 +1,56 @@
+<script language="javascript" type="text/javascript">
+	function _onclick() {
+		window.location.href = "./?action=set_Anonym";
+	}
+</script>
+<article id="content">
+	<form action=".">
+		<header>
+			<h1>
+				<?php echo $this->runame?>
+			</h1>
+		</header>
+		<input type=hidden name=address />
+		<table class="<?php echo $this->zakaz->papeer.' '.$this->zakaz->konvert ?>">
+			<tr>
+				<td><span class="nobr"> <label for="from">От&nbsp;кого:</label>
+						<input type="text" name="from" id="from"
+						value="<?php if ($this->zakaz->anonym) echo 'VKonverte'; else echo $this->zakaz->address['from'];?>"<?php
+						if ($this->zakaz->anonym) echo 'readonly';?>/>
+				</span><br /> <span class="nobr"> <label for="fromwhere">Откуда:</label>
+						<input type="text" name="fromwhere" id="fromwhere"
+						value="<?php if ($this->zakaz->anonym) echo 'vkonverte.com'; else echo $this->zakaz->address['fromwhere'];?>"<?php
+						if ($this->zakaz->anonym) echo 'readonly';?>/>
+				</span><br /> <span class="nobr"> <label for="fromindex">Индекс:</label>
+						<input type="text" name="fromindex" id="fromindex"
+						value="<?php if ($this->zakaz->anonym) echo ''; else echo $this->zakaz->address['fromindex'];?>"<?php
+						if ($this->zakaz->anonym) echo 'readonly';?>/>
+				</span><br /> <span class="nobr"> <label for="chk">Анонимно</label>
+						<input id="chk" type="checkbox" onclick="_onclick()"<?php
+						if ($this->zakaz->anonym) echo 'checked';?> />
+				</span></td>
+				<td width="50%">&nbsp;</td>
+			</tr>
+			<tr>
+				<td><input id="submit" type="submit" name="submit"
+					value="Вложить файл" /></td>
+				<td><span class="nobr"> <label for="to">Кому:</label> <input
+						type="text" name="to" id="to"
+						value="<?php echo $this->zakaz->address['to'];?>" />
+				</span><br /> <span class="nobr"> <label for="towhere">Куда:</label>
+						<input type="text" name="towhere" id="towhere"
+						value="<?php echo $this->zakaz->address['towhere'];?>" />
+				</span><br /> <span class="nobr"> <label for="toindex">Индекс:</label>
+						<input type="text" name="toindex" id="toindex"
+						value="<?php echo $this->zakaz->address['toindex'];?>" />
+				</span></td>
+			</tr>
+			<tr><td class="nopad" colspan="3"><small><?php echo Model::getActionsNav();?></small></td></tr>
+		</table>
+		<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+			<?php echo Model::getStatesNav($this);?>
+			<?php //echo Model::getActionsNav();?>
+		</nav>
+
+	</form>
+</article>

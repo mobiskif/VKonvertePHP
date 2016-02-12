@@ -1,0 +1,23 @@
+<article>
+<h2><?php echo $this->context->state->runame?></h2>
+<form action="." method="post" enctype="multipart/form-data">
+		<table class="convert">
+		<tr>
+			<td><span style="color: gray;">Отправитель:</span><br />
+				<em> <?php echo $this->context->fields['from'];?> <br /> <?php echo $this->context->fields['fromwhere'];?>
+					<br /> <?php echo $this->context->fields['fromindex'];?>
+			</em></td>
+			<td></h3><label for="f">Вложить файл:</label><input class="inp" type="file"
+				name="file" id="f" size="4" /></td>
+		</tr>
+		<tr>
+			<td><input id="submit_file" type="submit"
+				name="submit_file" value="Дальше" /></td>
+			<td><span style="color: gray;">Получатель:</span><br />
+				<em> <?php echo $this->context->fields['to'];?> <br /> <?php echo $this->context->fields['towhere'];?>
+					<br /> <?php echo $this->context->fields['toindex'];?>
+			</em></td>
+		</tr>
+	</table>
+</form>
+</article>

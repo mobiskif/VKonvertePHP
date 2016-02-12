@@ -1,0 +1,27 @@
+<article id="content">
+	<div id="selfie">&nbsp;</div>
+	<header>
+		<h1>
+			<?php echo TITLE; ?>
+		</h1>
+		<h2>
+			<?php echo DESCRIPTION; ?>
+		</h2>
+	</header>
+	<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+		<!-- 
+		<ul itemprop="breadcrumb">
+			<li class="border" typeof="v:Breadcrumb" >
+				1 <a href="./?state=stateOne" title="Подписать конверт" rel="v:url" property="v:title" >Подписать конверт</a>
+			</li>
+			<li typeof="v:Breadcrumb" >
+				2 <span href="./?state=stateTwo" title="Вложить файл" rel="v:url" property="v:title">Вложить файл</span>
+			</li>
+			<li class="noborder" typeof="v:Breadcrumb" >
+				3 <span href="./?state=stateThree" title="Оплатить" rel="v:url" property="v:title" >Оплатить</span>
+			</li>
+		</ul>
+		-->
+		<?php echo Model::getStatesNav($this);?>
+	</nav>
+</article>

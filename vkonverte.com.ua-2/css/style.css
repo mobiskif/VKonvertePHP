@@ -1,0 +1,151 @@
+html, body {
+	margin		: 0;
+	padding		: 0;
+	height		: 100%;
+}
+html {
+	background-image: url(../img/globe.gif);
+}
+body {
+	font-family		: Georgia, Times, serifs;
+}
+#floater {
+	position		: relative;
+	float			: left;
+	height			: 50%;
+	margin-bottom	: -200px;
+	width			: 1px;
+}
+#centered {
+	position		: relative;
+	clear			: left;
+	height			: 360px;
+	width			: 80%;
+	max-width		: 800px;
+	min-width		: 400px;
+	margin			: 0 auto;
+	bborder			: 4px solid #666;
+	border			: 1em dashed orange;
+	oopacity: 0.7; /* Полупрозрачный фон */
+    ofilter: alpha(Opacity=70); /* Прозрачность в IE */
+}
+#bottom {
+	position		: absolute;
+	bottom		: 0;
+	right			: 0;
+}
+#nav {
+	left			: 0;
+	top			: 0;
+	bottom		: 0;
+	right			: 0;
+	padding		: 20px;
+	margin		: 10px;
+}
+#content {
+	position		: absolute;
+	left			: 30%;
+	right			: 0;
+	top			: 0;
+	bottom		: 0;
+	overflow		: auto;
+	height		: 300px;
+	padding		: 20px;
+	margin		: 10px;
+}
+ul#nav, ol#nav  {
+	list-style		: none;
+	padding			: 0;
+	margin			: 20px 0 0 20px;
+	text-indent		: 0;
+}
+#nav li {
+	padding			: 0;
+	margin			: 3px;
+}
+#nav li a {
+	display			: block;
+	padding			: 7px;
+	margin			: 0;
+	text-decoration	: none;
+	color			: navy;
+	border-bottom	: 1px solid navy;
+	text-align		: right;
+}
+#nav li a::after {
+	content			: '»';
+	color				: navy;
+	font-weight			: bold;
+	display			: inline;
+	float				: right;
+	margin			: 0 2px 0 5px;
+	
+}
+#nav li a:hover, #nav li a:focus {
+	background			: #f8f8f8;
+	color				: orange;
+}
+#nav li a:hover::after {
+	margin			: 0 0 0 7px;
+	color				: orange;
+}
+#nav li a:active {
+	padding			: 8px 7px 6px 7px;
+}
+#centered {
+	-webkit-border-radius		: 8px;
+	-moz-border-radius		: 8px;
+	border-radius			: 8px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family				: Helvetica, Arial, sans-serif;
+	color					: orange;
+}
+h1, h2, h3 {
+	color					: #f93;
+	border-bottom			: 1px solid #ddd;
+	letter-spacing			: -0.05em;
+	margin-top				: 0;
+	padding-top				: 0;
+}
+#bottom {
+	padding				: 10px;
+	font-size				: 0.7em;
+	color					: #f03;
+}
+#side{
+	float					: left;
+	height 					: 100%;
+	width					: 30%;
+}
+#logo {
+	font-size				: 2em;
+	text-align				: center;
+	color					: #999;
+}
+#logo strong, #logo h1  {
+	font-weight				: normal;
+	font-size				: 1em;
+	color					: gray;
+}
+#logo sspan {
+	display					: block;
+	font-size				: 4em;
+	line-height				: 0.7em;
+	color					: #666;
+	margin-top				: 25px;
+}
+p, h2, h3 {
+	line-height				: 1.6em;
+}
+a {
+	color					: navy;
+}
+#side nav li, #side nav li a {
+	list-style		: none;
+	text-decoration: none;
+}
+#side nav li a:hover {
+	text-decoration: underline;
+	color:orange;
+}

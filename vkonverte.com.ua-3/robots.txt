@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /mvc
+Disallow: /uploads
+Host: vkonverte.com.ua

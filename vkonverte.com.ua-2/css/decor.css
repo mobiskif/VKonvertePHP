@@ -1,0 +1,85 @@
+body {
+	background-image: url(../img/globe.gif);
+	background-attachment: fixed;
+	background-size: cover;
+    font-size: 120%;
+}
+/*
+ul {
+	font-size: small;
+	padding-left: 0
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+
+
+h1 {
+	color: #4D148C;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size:1em;
+}
+
+h2 {
+	font-weight: normal;
+	margin-top: 0;
+	font-size:1em;
+}
+
+.vh-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.h-center {
+	
+	margin-left:auto;
+	margin-right:auto;
+	width:75%;
+	
+}
+
+.h-center table{
+	
+	margin-left:auto;
+	margin-right:auto;
+	
+	border: .8em dashed #4D148C;
+	padding: .5em;
+	width:100%;
+}
+
+table.stateFor {
+	background-image: url(../img/konvert3.jpg);
+	background-size: auto 100%;
+	border-color: green;
+}
+td {
+	border: 0px solid silver;
+	padding: .5em;
+	text-align: right;
+}
+.horismenu a {
+	color: gray;
+}
+#logo {
+	border:0px solid;
+}
+#logo img {
+	float:left;
+	border:0px solid;
+	margin-right: 1em;
+	vertical-align: middle;
+}
+*/

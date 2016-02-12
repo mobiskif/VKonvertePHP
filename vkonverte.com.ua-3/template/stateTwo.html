@@ -1,0 +1,33 @@
+<article id="content">
+	<form action="./" method="post" enctype="multipart/form-data">
+		<header>
+			<h1>
+				<?php echo $this->runame?>
+			</h1>
+		</header>
+		<table class="<?php echo $this->zakaz->papeer.' '.$this->zakaz->konvert ?>">
+			<tr>
+				<td><span>Отправитель:</span><br /> <em> <?php echo $this->zakaz->address['from'];?>
+						<br /> <?php echo $this->zakaz->address['fromwhere'];?>
+						<br /> <?php echo $this->zakaz->address['fromindex'];?>
+				</em></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 2em;"><input type="file"
+					name="userfile" /> <input type="submit" name="submit_file"
+					value="Отправить" /></td>
+				<td>&nbsp;</td>
+				<td><span>Получатель:</span><br /> <em> <?php echo $this->zakaz->address['to'];?>
+						<br /> <?php echo $this->zakaz->address['towhere'];?>
+						<br /> <?php echo $this->zakaz->address['toindex'];?>
+				</em></td>
+			</tr>
+			<tr><td class="nopad" colspan="3"><small><?php echo Model::getActionsNav();?></small></td></tr>
+		</table>
+		<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+			<?php echo Model::getStatesNav($this);?>
+			<?php //echo Model::getActionsNav();?>
+		</nav>
+	</form>
+</article>

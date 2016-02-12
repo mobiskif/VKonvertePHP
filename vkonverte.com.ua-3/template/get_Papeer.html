@@ -1,0 +1,20 @@
+<article>
+	<h3>
+		<?php echo $this->runame; ?>
+	</h3>
+	<section>
+		<figure>
+			<a <?php if ($this->zakaz->papeer == "Classic") echo 'class="active"';?>  href="?action=set_Papeer&amp;papeer=Classic"><img src="img/classic.jpg" height="86px" alt="ВКонверте" />
+			<figcaption >"Классика"</figcaption></a>
+		</figure>
+		<figure>
+			<a <?php if ($this->zakaz->papeer == "Modern") echo 'class="active"';?> href="?action=set_Papeer&amp;papeer=Modern"><img src="img/modern.jpg" height="86px" alt="ВКонверте" />
+			<figcaption>"Модерн"</figcaption></a>
+		</figure>
+		<figure>
+			<a <?php if ($this->zakaz->papeer == "Photo") echo 'class="active"';?> href="?action=set_Papeer&amp;papeer=Photo"><img src="img/photo.jpg" height="86px" alt="ВКонверте" />
+			<figcaption>"Фото"</figcaption></a>
+		</figure>
+	</section>
+	<a href="./">Назад</a>
+</article>

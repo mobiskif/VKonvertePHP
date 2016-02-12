@@ -1,0 +1,25 @@
+@media screen and (max-width: 980px) {
+	.w75 {
+		width: 100%
+	}
+	.h-center,table {
+		
+	}
+}
+
+div,td {
+	border: 1px solid
+}
+
+.w75 {
+	width: 100%
+}
+
+.h-center,table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+li {
+	display: inline;
+}

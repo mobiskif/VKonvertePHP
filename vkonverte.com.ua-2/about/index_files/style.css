@@ -1,0 +1,60 @@
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+HTML {
+	BORDER-BOTTOM: #282828 1px solid; BORDER-LEFT: #282828 1px solid; BORDER-TOP: #282828 1px solid; BORDER-RIGHT: #282828 1px solid
+}
+BODY {
+	BACKGROUND-COLOR: #282828; FONT: 112%/1.4 Verdana, sans-serif
+}
+header {
+	DISPLAY: block
+}
+nav {
+	DISPLAY: block
+}
+article {
+	DISPLAY: block
+}
+header {
+	PADDING-BOTTOM: 1em; BACKGROUND-COLOR: white; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; OVERFLOW: auto; PADDING-TOP: 1em
+}
+article {
+	PADDING-BOTTOM: 1em; BACKGROUND-COLOR: white; PADDING-LEFT: 1em; PADDING-RIGHT: 1em; OVERFLOW: auto; PADDING-TOP: 1em
+}
+header IMG {
+	FLOAT: left; MARGIN-RIGHT: 1em
+}
+header H1 {
+	MARGIN-BOTTOM: 0em
+}
+header H2 {
+	MARGIN-TOP: 0em; FONT-WEIGHT: normal
+}
+article {
+	MARGIN-BOTTOM: 1em
+}
+TABLE.convert {
+	BORDER-BOTTOM: orange 1em dashed; BORDER-LEFT: orange 1em dashed; PADDING-BOTTOM: 1em; PADDING-LEFT: 1em; WIDTH: 100%; PADDING-RIGHT: 1em; BORDER-TOP: orange 1em dashed; BORDER-RIGHT: orange 1em dashed; PADDING-TOP: 1em
+}
+DIV.wrap {
+	MARGIN: auto; WIDTH: 95%
+}
+H1 A {
+	COLOR: orange; TEXT-DECORATION: none
+}
+nav A {
+	COLOR: orange; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.active {
+	BACKGROUND: white
+}
+header {
+	MARGIN-BOTTOM: 1em
+}
+nav A {
+	PADDING-BOTTOM: 0.5em; PADDING-LEFT: 0.5em; PADDING-RIGHT: 0.5em; DISPLAY: inline-block; PADDING-TOP: 0.5em
+}

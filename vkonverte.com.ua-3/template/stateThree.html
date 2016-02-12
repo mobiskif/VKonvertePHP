@@ -1,0 +1,32 @@
+<article id="content">
+	<header>
+		<h1>
+			<?php echo $this->runame?>
+		</h1>
+	</header>
+	<table class="<?php echo $this->zakaz->papeer.' '.$this->zakaz->konvert ?>">
+		<tr>
+			<td style="text-align: left;"><span>Отправитель:</span><br /> <em>
+					<?php echo $this->zakaz->address['from'];?> <br /> <?php echo $this->zakaz->address['fromwhere'];?>
+					<br /> <?php $this->zakaz->address['fromindex'];?>
+			</em></td>
+			<td><img alt="*" src="img/mark.gif" height="116px"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center; width: 50%">
+				<?php if (isset($this->context->file)) echo $this->context->file; ?>
+				<?php echo Model::getPayForm($this->zakaz); ?>
+			</td>
+			<td style="text-align: left;"><span>Получатель:</span><br /> <em>
+					<?php echo $this->zakaz->address['to'];?> <br /> <?php echo $this->zakaz->address['towhere'];?>
+					<br /> <?php echo $this->zakaz->address['toindex'];?>
+			</em></td>
+		</tr>
+			<tr><td class="nopad" colspan="3"><small><?php echo Model::getActionsNav();?></small></td></tr>
+	</table>
+	<nav xmlns:v="http://rdf.data-vocabulary.org/#">
+		<?php echo Model::getStatesNav($this);?>
+		<?php //echo Model::getActionsNav();?>
+	</nav>
+
+</article>

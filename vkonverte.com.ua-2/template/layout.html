@@ -1,0 +1,33 @@
+<div id="floater"><a href="https://plus.google.com/117018063430296835282" rel="publisher">G+</a></div>
+<div id="centered">
+	<div id="side" itemscope itemtype="http://schema.org/LocalBusiness">
+		<header id="logo">
+			<span><a href="."><img alt="<?php echo $this->title?>" itemprop="image" src="img/logo3.png" width="100%" height="76px"></a></span>
+			<h1 itemprop="name" style="display: none">ВКонверте</h1>
+		</header>
+		<nav>
+			<?php echo $this->model->getMainPathNav($this->context->state) ?>
+		</nav>
+		<nav>
+			<?php echo $this->model->getKeyWordsNav();?>
+		</nav>
+	</div>
+	<div id="content">
+		<?php 
+if (isset ($this->context->action)) {if (file_exists ($this->template.'/'.$this->context->action.'.html'))  include ($this->template.'/'.$this->context->action.'.html');} 
+elseif (file_exists ($this->template.'/'.get_class($this->context->state).'.html')) $this->stateCode = include($this->template.'/'.get_class($this->context->state).'.html'); 
+		?>
+	</div>
+</div>
+<div style="display:none">
+	<?php 
+		foreach ($this->model->keywords as $key => $value) {
+$this->context->action=$value;
+			if (file_exists ($this->template.'/'.$value.'.html'))  
+				include($this->template.'/'.$value.'.html');
+		}
+	?>
+</div>
+<div id="bottom">
+	<?php echo $this->title." "; echo $this->description;?>
+</div>
