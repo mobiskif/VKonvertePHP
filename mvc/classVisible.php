@@ -3,16 +3,16 @@ require_once 'Model.php';
 class classVisible {
 	//public $error="";
 	function __construct() {
-		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : "template-old";		
+		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : TEMPL;		
 	}
 	
 	public function include_Header() {
-		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : "template-old";		
+		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : TEMPL;		
 		header ( 'Content-Type: text/html; charset=utf-8' );
 		include ($this->template . '/header.html');
 	}
 	function include_Content() {
-		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : "template-old";		
+		$this->template = isset ( $_COOKIE ["template"] ) ? $_COOKIE ["template"] : TEMPL;		
 		$templname = $this->template . '/' . get_class ( $this ) . '.html';
 		if (file_exists ( $templname )) {
 			include ($templname);

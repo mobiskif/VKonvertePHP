@@ -1,5 +1,5 @@
 <?php
-//const TEMPL="template-new";
+const TEMPL="template-old";
 const LOGO="ВКонверте";
 const TITLE = "Фото из смартфона &mdash; почтой в конверте";
 const DESCRIPTION="Отправляйте фотографии и документы по всему миру по цене местной почты";
