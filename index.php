@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 ini_set ("display_errors", "1");
 error_reporting(E_ALL);
 //header ( 'Content-Type: text/html; charset=utf-8' );
@@ -25,4 +26,3 @@ $view->include_Header();
 $view->include_Content();
 //echo $view->getContent();
 $view->include_Footer();
-?>
